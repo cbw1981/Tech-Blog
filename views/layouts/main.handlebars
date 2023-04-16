@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="images/mediamaker_logo.png" width="112" height="28">
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/">
+        Home
+    
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          {{#if loggedIn}}
+          <a class="button is-light" id="logout" href="/">
+            Log out
+          </a>
+          {{ else }}
+          <a class="button is-primary" id ="" href="/signup">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light" href="/">
+            Log in
+          </a>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    </header>
+
+
+
+
+      <div class="container">
+        {{{  body  }}}
+      </div>
+</div>
+    <footer class="footer mt-6">
+      <div class="content has-text-centered" >Clayton Wilkey</div>
+    </footer>
+  
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+  <script src="https://kit.fontawesome.com/b2ad43cfb5.js" crossorigin="anonymous"></script>
+  </body>
+</html>
