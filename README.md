@@ -42,3 +42,11 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+
+## Screenshot
+
+![screenshot.](./assets/Screen%20Shot%202023-04-17%20at%202.32.35%20AM.png)
+
+## Link
+
+https://powerful-woodland-27979.herokuapp.com/
